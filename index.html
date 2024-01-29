@@ -6,23 +6,33 @@
     <title>Login</title>
     <link rel="stylesheet" href="./assets/styles.css">
 </head>
-<body>
-    <div class="login-page">
-        <div class="form">
-            <form class="register-form">
-                <input type="text" placeholder="name">
-                <input type="password" placeholder="password">
-                <input type="text" placeholder="email address">
-                <button>Create</button>
-                <p class="message">¿Ya registrado? <a href="#">Iniciar sesión</a></p>
-            </form>
-            <form class="login-form">
-                <input type="text" placeholder="username">
-                <input type="password" placeholder="password">
-                <button>Login</button>
-                <p class="message">¿No registrado? <a href="#">Crea una cuenta</a></p>
-            </form>
-        </div>
-    </div>
+<body class="align">
+    <div class="grid">
+        <form action="" method="POST" class="form login">   
+          <div class="form__field">
+            <label for="login__username"><svg class="icon">
+                <use xlink:href="#icon-user"></use>
+              </svg><span class="hidden">Username</span></label>
+            <input autocomplete="username" id="login__username" type="text" name="username" class="form__input" placeholder="Username" required>
+          </div>
+    
+          <div class="form__field">
+            <label for="login__password"><svg class="icon">
+                <use xlink:href="#icon-lock"></use>
+              </svg><span class="hidden">Password</span></label>
+            <input id="login__password" type="password" name="password" class="form__input" placeholder="Password" required>
+          </div>
+    
+          <div class="form__field">
+            <input type="submit" value="Sign In">
+          </div>
+    
+        </form>
+    
+        <p class="text--center">Not a member? <a href="#">Sign up now</a> <svg class="icon">
+            <use xlink:href="#icon-arrow-right"></use>
+          </svg></p>
+    
+      </div>
 </body>
 </html>
