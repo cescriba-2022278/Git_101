@@ -1,6 +1,11 @@
 function redirectToDetalle1() {
     alert("Redirigiendo a la página de detalle");
-    window.location.href  = "detalle1.html";
+    window.location.href  = "./detallesContacto/contactoDetalle1.html";
+}
+
+function redirectToDetalle2() {
+    alert("Redirigiendo a la página de detalle");
+    window.location.href  = "./detallesContacto/contactoDetalle2.html";
 }
 
 function redirectToAgregarContacto() {
