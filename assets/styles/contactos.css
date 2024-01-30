@@ -104,3 +104,23 @@ button:active {
   transform: translateY(10px);
   transition: 100ms;
 }
+
+@media screen and (max-width: 767px) {
+  .container {
+      width: 90%;
+  }
+}
+
+/* Estilos para tabletas en modo apaisado y pequeñas computadoras portátiles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+      width: 80%;
+  }
+}
+
+/* Estilos para pantallas de computadoras de escritorio */
+@media screen and (min-width: 1024px) {
+  .container {
+      width: 1200px; /* O cualquier valor máximo que desees */
+  }
+}
