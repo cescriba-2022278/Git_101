@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/agregarContacto.css">
     <title>Agregar Contacto</title>
 </head>
 <body>
@@ -26,9 +27,15 @@
             <input placeholder="Telefono" type="text" tabindex="5" required></t>
           </fieldset>
           <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Guardar</button>
+            <button onclick="redirectToContactos()">Enviar</button>
           </fieldset>
         </form> 
       </div>
+      <script>
+        function redirectToContactos() {
+            alert("Redirigiendo a la página de Perfil");
+            window.location.href = "./contactos.html";
+        }
+      </script>
 </body>
 </html>
