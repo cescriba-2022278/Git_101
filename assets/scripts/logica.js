@@ -23,7 +23,17 @@ function redirectToDetalle5() {
     window.location.href  = "./detallesContacto/contactoDetalle5.html";
 }
 
+function redirectToPerfil() {
+    alert("Redirigiendo a la página de Perfil");
+    window.location.href = "./perfilUsuario.html";
+}
+
 function redirectToAgregarContacto() {
     alert("Redirigiendo a la página de agregar contacto");
-    window.location.href   = "agregar_contacto.html";
+    window.location.href   = "./agregarContacto.html";
+}
+
+function redirectToTodoList() {
+    alert("Redirigiendo a la página de agregar contacto");
+    window.location.href   = "./todoList.html";
 }
