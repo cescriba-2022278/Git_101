@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="./assets/styles/contactos.css">
+</head>
+<body>
+    <div class="profile-button">
+        <button onclick="redirectToAgregarContacto()">Agregar Contacto</button>
+        <button onclick="redirectToPerfil()">Perfil</button>
+        <button onclick="redirectToTodoList()">Todo List</button>
+    </div>
+  <div class="contacts table" aria-labelledby="contacts-caption-text">
+    <span class="caption" id="contacts-caption-text">Lista de Contactos</span>
+    <div class="contacts-header thead">
+      <span class="th" id="th-name">Name:</span>
+      <span class="th" id="th-phone">Phone:</span>
+      <span class="th" id="th-detalle">Detalle de usuario:</span>
+    </div>  
+    <ul class="tbody">
+      <li class="tr" itemscope>
+        <span class="td">
+          <span class="label">Name:</span>
+          <span class="data" itemprop="name" aria-labelledby="th-name">Diego Arriola</span>
+        </span>
+        <span class="td">
+          <span class="label">Phone:</span>
+          <span class="data" itemprop="telephone" aria-labelledby="th-phone">+502 5678-3492</span>
+        </span>
+        <span class="td">
+          <span class="label">Detalles:</span>
+          <button class="detail-btn" onclick="redirectToDetalle1()">Detalle</button>
+        </span>
+      </li>
+      <li class="tr" itemscope>
+        <span class="td">
+          <span class="label">Name:</span>
+          <span class="data" itemprop="name" aria-labelledby="th-name">Cesar Escriba</span>
+        </span>
+        <span class="td">
+          <span class="label">Phone:</span>
+          <span class="data" itemprop="telephone" aria-labelledby="th-phone">+502 7894-0908</span>
+        </span>
+        <span class="td">
+          <span class="label">Detalles:</span>
+          <button class="detail-btn" onclick="redirectToDetalle2()">Detalle</button>
+        </span>
+      </li>
+      <li class="tr" itemscope>
+        <span class="td">
+          <span class="label">Name:</span>
+          <span class="data" itemprop="name" aria-labelledby="th-name">Omar Sanches</span>
+        </span>
+        <span class="td">
+          <span class="label">Phone:</span>
+          <span class="data" itemprop="telephone" aria-labelledby="th-phone">+502 4563-7801</span>
+        </span>
+        <span class="td">
+          <span class="label">Detalles:</span>
+          <button class="detail-btn" onclick="redirectToDetalle3()">Detalle</button>
+        </span>
+      </li>  
+      <li class="tr" itemscope>
+        <span class="td">
+          <span class="label">Name:</span>
+          <span class="data" itemprop="name" aria-labelledby="th-name">Juan Galicia</span>
+        </span>
+        <span class="td">
+          <span class="label">Phone:</span>
+          <span class="data" itemprop="telephone" aria-labelledby="th-phone">+502 7105-4672</span>
+        </span>
+        <span class="td">
+          <span class="label">Detalles:</span>
+          <button class="detail-btn" onclick="redirectToDetalle4()">Detalle</button>
+        </span>
+      </li>  
+      <li class="tr" itemscope>
+        <span class="td">
+          <span class="label">Name:</span>
+          <span class="data" itemprop="name" aria-labelledby="th-name">Emireth Torres</span>
+        </span>
+        <span class="td">
+          <span class="label">Phone:</span>
+          <span class="data" itemprop="telephone" aria-labelledby="th-phone">+502 5561-7689</span>
+        </span>
+        <span class="td">
+          <span class="label">Detalles:</span>
+          <button class="detail-btn" onclick="redirectToDetalle5()">Detalle</button>
+        </span>
+      </li>      
+    </ul>
+  </div>
+  <script src="./assets/scripts/logica.js"></script>
+</body>
+</html>
